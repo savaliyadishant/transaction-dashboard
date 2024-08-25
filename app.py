@@ -8,7 +8,7 @@ CORRECT_PASSWORD = 'mypassword'  # Change this to your desired password
 
 # Connect to your cloud MongoDB database
 try:
-    client = MongoClient("mongodb+srv://savaliyadishant3:zWYsuhySLltfii5v@cluster0.grxeu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # Replace with your MongoDB URI
+    client = MongoClient(MONGO_URI)  # Replace with your MongoDB URI
     db = client['Transactions']
     collection = db['transactions']
     # Test the connection
