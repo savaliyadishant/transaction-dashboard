@@ -10,8 +10,7 @@ A simple web application to record personal transactions built with Flask, Mongo
 4. [Getting Started](#getting-started)
 5. [Deployment on Vercel](#deployment-on-vercel)
 6. [Usage](#usage)
-7. [Contributing](#contributing)
-8. [License](#license)
+7. [License](#license)
 
 ## Project Overview
 
@@ -42,6 +41,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 ```bash
 git clone https://github.com/your-username/transaction-recorder.git
 cd transaction-recorder
+```
 
 ### 2. Set Up a Virtual Environment
 Create a virtual environment
@@ -53,51 +53,53 @@ python -m venv venv
 venv\Scripts\activate
 # On macOS/Linux
 source venv/bin/activate
-
+```
 ### 3. Install the Required Dependencies
 ```bash
 pip install -r requirements.txt
-
+```
 ### 4. Configure Environment Variables
 Create a .env file in the root directory of the project to store your environment variables. This file should contain:
 
-'''bash
+```bash
 MONGODB_URI="your_mongodb_uri"
 FLASK_SECRET_KEY="your_flask_secret_key"
-
+```
 Replace your_mongodb_uri with your actual MongoDB connection string and your_flask_secret_key with a secret key for Flask.
 
-5. Run the Application Locally
-bash
+### 5. Run the Application Locally
+```bash
 Copy code
 flask run
+```
 Open your web browser and navigate to http://127.0.0.1:5000 to see the application in action.
 
-Deployment on Vercel
+## Deployment on Vercel
 To deploy this application on Vercel, follow these steps:
 
-1. Push Your Code to GitHub
+## 1. Push Your Code to GitHub
 Ensure your latest changes are committed and pushed to your GitHub repository:
 
-bash
-Copy code
+```bash
 git add .
 git commit -m "Initial commit"
 git push origin main
-2. Connect Your GitHub Repository to Vercel
+```
+## 2. Connect Your GitHub Repository to Vercel
 Log in to your Vercel account.
 Click on New Project.
 Import the repository from GitHub.
 Follow the prompts to configure your project.
-3. Configure Environment Variables on Vercel
+### 3. Configure Environment Variables on Vercel
 Go to your Vercel dashboard and select your project.
 Click on Settings > Environment Variables.
 Add the same environment variables from your .env file:
 makefile
-Copy code
+```bash
 MONGODB_URI="your_mongodb_uri"
 FLASK_SECRET_KEY="your_flask_secret_key"
-4. Create a vercel.json File
+```
+### 4. Create a vercel.json File
 Add a vercel.json file to the root of your project directory to specify the build settings for Vercel:
 
 json
@@ -117,21 +119,16 @@ Copy code
     }
   ]
 }
-5. Deploy the Project
+
+### 5. Deploy the Project
 Click Deploy on the Vercel dashboard.
 Wait for the deployment to complete. You will get a URL to access your deployed application.
-Usage
+### Usage
 Open the deployed application in your browser.
 Log in using the correct credentials.
 Add, view, and manage your personal transactions.
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the repository.
-Create a new branch.
-Make your changes and commit them.
-Push to your fork and submit a pull request.
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 vbnet
