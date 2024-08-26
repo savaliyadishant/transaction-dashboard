@@ -63,7 +63,6 @@ Create a .env file in the root directory of the project to store your environmen
 
 ```bash
 MONGODB_URI="your_mongodb_uri"
-FLASK_SECRET_KEY="your_flask_secret_key"
 ```
 Replace your_mongodb_uri with your actual MongoDB connection string and your_flask_secret_key with a secret key for Flask.
 
@@ -102,7 +101,7 @@ FLASK_SECRET_KEY="your_flask_secret_key"
 ### 4. Create a vercel.json File
 Add a vercel.json file to the root of your project directory to specify the build settings for Vercel:
 
-json
+```json
 Copy code
 {
   "version": 2,
@@ -119,6 +118,7 @@ Copy code
     }
   ]
 }
+```
 
 ### 5. Deploy the Project
 Click Deploy on the Vercel dashboard.
