@@ -10,7 +10,6 @@ A simple web application to record personal transactions built with Flask, Mongo
 4. [Getting Started](#getting-started)
 5. [Deployment on Vercel](#deployment-on-vercel)
 6. [Usage](#usage)
-7. [License](#license)
 
 ## Project Overview
 
@@ -68,7 +67,6 @@ Replace your_mongodb_uri with your actual MongoDB connection string and your_fla
 
 ### 5. Run the Application Locally
 ```bash
-Copy code
 flask run
 ```
 Open your web browser and navigate to http://127.0.0.1:5000 to see the application in action.
@@ -102,7 +100,6 @@ FLASK_SECRET_KEY="your_flask_secret_key"
 Add a vercel.json file to the root of your project directory to specify the build settings for Vercel:
 
 ```json
-Copy code
 {
   "version": 2,
   "builds": [
@@ -123,23 +120,7 @@ Copy code
 ### 5. Deploy the Project
 Click Deploy on the Vercel dashboard.
 Wait for the deployment to complete. You will get a URL to access your deployed application.
-### Usage
+## Usage
 Open the deployed application in your browser.
 Log in using the correct credentials.
 Add, view, and manage your personal transactions.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-vbnet
-Copy code
-
----
-
-### Instructions to Use
-
-1. **Copy the Above Markdown**: Copy all the text above and paste it into a new file named `README.md` in the root of your repository.
-2. **Edit the Content**: Make sure to replace placeholders such as `your-username` and `your_mongodb_uri` with your actual GitHub username and MongoDB URI.
-3. **Save and Commit**: Save the file, add it to your git repository, commit the changes, and push it to GitHub.
-
-By following these instructions, anyone will be able to set up, run, and deploy their own version of your tra
